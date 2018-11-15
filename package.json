@@ -5,8 +5,9 @@
   "author": "Gaétan Nicolas <gnicolas@appstud.com>",
   "private": true,
   "dependencies": {
+    "@nuxtjs/pwa": "latest",
     "nuxt": "latest",
-    "@nuxtjs/pwa": "latest"
+    "nuxt-google-maps-module": "^1.6.0"
   },
   "scripts": {
     "dev": "nuxt",

@@ -2,7 +2,11 @@
   <section class="container">
     <div>
       <logo/>
-      <input type="file" name="pic" accept="image/*">
+      <div>
+        <input type="file" name="pic" accept="image/*">
+        <a href="new-waste">Hello</a>
+        <a href="list-waste"> Hey</a>
+      </div>
       <div :class="['network',online ? 'online' : 'offline']">
         <div class="circle"></div>
         {{ online ? 'online' : 'offline' }}
