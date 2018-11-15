@@ -1,4 +1,5 @@
 module.exports = {
+    css: ['@/assets/css/style.css'],
   /*
   ** Build configuration
   */
@@ -7,7 +8,8 @@ module.exports = {
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
   */
-  head: {},
+  head: {
+  },
   /*
   ** Customize the progress-bar color
   */
