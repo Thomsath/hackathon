@@ -6,8 +6,7 @@
   "private": true,
   "dependencies": {
     "@nuxtjs/pwa": "latest",
-    "nuxt": "latest",
-    "nuxt-google-maps-module": "^1.6.0"
+    "nuxt": "latest"
   },
   "scripts": {
     "dev": "nuxt",
