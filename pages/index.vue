@@ -22,7 +22,6 @@
       }
     },
     mounted () {
-      this.requestFullscreen();
       if (!window.navigator) {
         this.online = false
         return
