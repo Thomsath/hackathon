@@ -9,10 +9,7 @@ module.exports = {
   ** Common headers are already provided by @nuxtjs/pwa preset
   */
   head: {
-<<<<<<< HEAD
-=======
     title: 'hackathon2018'
->>>>>>> maps
   },
   /*
   ** Customize the progress-bar color
