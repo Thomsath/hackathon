@@ -9,23 +9,30 @@
           <input type="file" name="pic" class="nav__link nav__link--middle"accept="image/location.svg*">
         </label>
         <a href="list-waste" class="nav__link nav__link--right"><img class="nav__logo" src="~assets/img/list.svg"></a>
-      </navbar>
+      </div>
 
       <div :class="['network',online ? 'online' : 'offline']">
         <div class="circle"></div>
         {{ online ? 'online' : 'offline' }}
       </div>
     </div>
-  </div>
+    <div style="height: 500px;width: 500px;">
+      <app-map/>
+    </div>
   </section>
 </template>
 
 <script>
   import Logo from '~/components/Logo.vue'
   import SplashScreen from '~/components/SplashScreen.vue'
+  import AppMap from '~/components/AppMap.vue'
 
   export default {
-    components: {Logo, SplashScreen},
+    components: {
+      Logo,
+      SplashScreen,
+      AppMap
+    },
     data () {
       return {
         online: true,

@@ -18,7 +18,6 @@ export default {
   },
   mounted() {
     this.loadMap();
-    console.log(this.mapStyle);
   },
   beforeDestroy() {
     this.map = null;
