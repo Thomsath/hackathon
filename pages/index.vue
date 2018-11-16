@@ -5,6 +5,8 @@
     <div ref="map" id="map">
       Loading Google Maps... (maybe display an image from Google maps API...https://developers.google.com/maps/documentation/maps-static/intro)
     </div>
+    <!-- <div class="pop-up" :class="open ? 'pop-up--open' : ''">
+    </div> -->
   </section>
 </template>
 
@@ -29,7 +31,8 @@
         map: null,
         mapStyle: mapStyle,
         mapMarker: mapMarker,
-        pos: {}
+        pos: {},
+        firstVisit: true,
       }
     },
     beforeDestroy() {
@@ -76,11 +79,7 @@
           styles: this.mapStyle,
           disableDefaultUI: true,
         });
-
-        let infowindow = new google.maps.InfoWindow({
-          content: '<div class="marker-container">hello</div>'
-        });
-
+        
         for (var i = 0; i<vm.mapMarker.length; i++) {
           let marker = new google.maps.Marker({
             position: {lat: parseFloat(mapMarker[i].lat), lng: parseFloat(mapMarker[i].lng)},
@@ -89,7 +88,6 @@
           });
 
           marker.addListener('click', function() {
-            infowindow.open(map, marker);
             console.log('heelo');
           })
         }
