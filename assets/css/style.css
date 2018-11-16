@@ -373,6 +373,9 @@ input:checked + .slider:before {
   text-align: center;
   padding: 15px 15px 15px 15px;
 }
+.success__container h1 {
+  margin-bottom: 15px;
+}
 
 .success__container img {
   width: 120px;
