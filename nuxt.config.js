@@ -1,5 +1,5 @@
 module.exports = {
-  css: ['@/assets/css/style.css'],
+  css: ['~/assets/css/fonts.css', '~/assets/css/style.css'],
   /*
   ** Build configuration
   */
