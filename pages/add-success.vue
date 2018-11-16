@@ -1,6 +1,6 @@
 <template>
   <main>
-    <add-waste />
+    <success />
 
     <custom-navbar />
   </main>
@@ -8,11 +8,11 @@
 
 
 <script>
-  import AddWaste from '~/components/AddWaste.vue'
+  import Success from '~/components/Success.vue'
   import CustomNavbar from '~/components/ShowNavbar.vue'
 
   export default {
-    components: {AddWaste, CustomNavbar},
+    components: {Success, CustomNavbar},
     mounted () {
       if (!window.navigator) {
         this.online = false

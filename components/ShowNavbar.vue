@@ -20,8 +20,6 @@
 export default {
   methods: {
     sendPicture() {
-      const vm = this;
-      console.log('test');
       this.$router.push('add-waste');
     }
   }
