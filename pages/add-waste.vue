@@ -1,16 +1,18 @@
 <template>
   <main>
-   	<custom-navbar />
-   	<list-waste />
+    <add-waste />
+
+    <custom-navbar />
   </main>
 </template>
 
+
 <script>
-  import ListWaste from '~/components/ListWaste.vue'
+  import AddWaste from '~/components/AddWaste.vue'
   import CustomNavbar from '~/components/ShowNavbar.vue'
 
   export default {
-    components: {CustomNavbar, ListWaste},
+    components: {AddWaste, CustomNavbar},
     data () {
     },
     mounted () {
@@ -26,7 +28,6 @@
     }
   }
 </script>
-
 <style>
 
 </style>

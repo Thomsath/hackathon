@@ -1,6 +1,7 @@
 <template>
   <section class="container">
     <splash-screen ref="splashScreen" v-if="splashScreenVisible"/>
+<<<<<<< HEAD
     <div class="navbar" v-if="navVisible">
       <a href="new-waste" class="nav__link nav__link--left"><img class="nav__logo" src="~assets/img/location.svg"></a>
 
@@ -12,19 +13,34 @@
     <div ref="map" id="map">
       Loading Google Maps... (maybe display an image from Google maps API...https://developers.google.com/maps/documentation/maps-static/intro)
     </div>
+=======
+    <custom-navbar />
+    <app-map class="map"/>
+>>>>>>> 292e40d9bd0b16d6b8dad9719f0bcf6eaa659598
   </section>
 </template>
 
 <script>
   import Logo from '~/components/Logo.vue'
   import SplashScreen from '~/components/SplashScreen.vue'
+<<<<<<< HEAD
   import mapStyle from '~/static/mapStyle.json'
   import mapMarker from "~/static/mapMarker.json"
+=======
+  import CustomNavbar from '~/components/ShowNavbar.vue' 
+  import AppMap from '~/components/AppMap.vue'
+>>>>>>> 292e40d9bd0b16d6b8dad9719f0bcf6eaa659598
 
   export default {
     components: {
       Logo,
+<<<<<<< HEAD
       SplashScreen
+=======
+      SplashScreen,
+      AppMap,
+      CustomNavbar
+>>>>>>> 292e40d9bd0b16d6b8dad9719f0bcf6eaa659598
     },
     data () {
       return {
