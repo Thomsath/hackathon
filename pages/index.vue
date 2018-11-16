@@ -7,6 +7,7 @@
     </div>
     <!-- <div class="pop-up" :class="open ? 'pop-up--open' : ''">
     </div> -->
+    <pop-up class="pop-up" :class="popUpOpened ? 'pop-up--open' : ''"/>
   </section>
 </template>
 
@@ -15,13 +16,15 @@
   import SplashScreen from '~/components/SplashScreen.vue'
   import mapStyle from '~/static/mapStyle.json'
   import mapMarker from "~/static/mapMarker.json"
-  import CustomNavbar from '~/components/ShowNavbar.vue' 
+  import CustomNavbar from '~/components/ShowNavbar.vue'
+  import PopUp from '~/components/PopUp.vue'
 
   export default {
     components: {
       Logo,
       SplashScreen,
-      CustomNavbar
+      CustomNavbar,
+      PopUp
     },
     data () {
       return {
@@ -33,6 +36,7 @@
         mapMarker: mapMarker,
         pos: {},
         firstVisit: true,
+        popUpOpened: false
       }
     },
     beforeDestroy() {
@@ -79,7 +83,7 @@
           styles: this.mapStyle,
           disableDefaultUI: true,
         });
-        
+
         for (var i = 0; i<vm.mapMarker.length; i++) {
           let marker = new google.maps.Marker({
             position: {lat: parseFloat(mapMarker[i].lat), lng: parseFloat(mapMarker[i].lng)},
@@ -88,7 +92,7 @@
           });
 
           marker.addListener('click', function() {
-            console.log('heelo');
+            vm.popUpOpened = !vm.popUpOpened
           })
         }
       },

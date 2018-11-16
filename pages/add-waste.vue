@@ -13,8 +13,6 @@
 
   export default {
     components: {AddWaste, CustomNavbar},
-    data () {
-    },
     mounted () {
       if (!window.navigator) {
         this.online = false

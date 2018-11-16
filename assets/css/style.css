@@ -2,6 +2,7 @@
 	position: relative;
 	height: 100vh;
 	width: 100vw;
+	overflow: hidden;
 }
 .splashScreen {
 	position: absolute;
@@ -235,4 +236,17 @@ input:checked + .slider:before {
 	border: 1px solid grey;
 	padding: 5px 20px 5px 20px;
 	margin-top: 15px;
+}
+
+.pop-up {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(100%);
+	transition: .5s;
+	z-index: 3;
+}
+
+.pop-up--open {
+	transform: translateY(0);
 }
