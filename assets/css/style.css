@@ -223,8 +223,21 @@ input:checked + .slider:before {
 /* LISTING WASTE */
 
 .listWaste__list--item {
-	display: flex;
-	margin: 5px;
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+
+.listWaste__list--item:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: #95A6A2;
+    transform: translateX(-50%);
 }
 
 .listWaste__list--itemLeft img {
@@ -232,15 +245,17 @@ input:checked + .slider:before {
 	width: 100px;
 }
 .listWaste__list--itemRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding-left: 15px;
 }
 
 .listWaste__list--itemAction {
 	border-radius: 10px;
-    border: 1px solid #ff9b85;
+    border: 1px solid #95A6A2;
     padding: 5px 20px 5px 20px;
-    background-color: #ff9b85;
-    margin-top: 15px;
+    background-color: #95A6A2;
     color: white;
 }
 

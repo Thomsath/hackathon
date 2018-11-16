@@ -65,6 +65,11 @@ export default {
   justify-content: space-between;
 }
 
+.popup__header button {
+  background-color: transparent;
+  border:0;
+}
+
 .popup__title {
   font-family: 'SF Pro Display';
   font-weight: bold;
