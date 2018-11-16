@@ -18,5 +18,46 @@
     "lat": "44.860114",
     "lng": "-0.564364",
     "type": "reutilisable"
+  },
+  {
+    "lat": "44.844292", 
+    "lng":"-0.588995",
+    "type": "reutilisable"
+  },
+  {
+    "lat": "44.844877",
+    "lng": "-0.575430",
+    "type" : "collecte_actif"
+  },
+  {
+    "lat":"44.845973",
+    "lng": "-0.589936",
+    "type": "poubelle"
+  },
+  {
+    "lat": "44.852789",
+    "lng": "-0.587876",
+    "type" : "collecte_inactif"
+  },
+  {
+    "lat": "44.830629",
+    "lng": "-0.577000",
+    "type": "poubelle"
+  },
+  {
+    "lat": "44.816345",
+    "lng": "-0.572464",
+    "type": "reutilisable"
+  },
+  {
+    "lat": "44.820463",
+    "lng": "-0.596323",
+    "type": "poubelle"
+  },
+  {
+    "lat": "44.837899",
+    "lng": "-0.599045",
+    "type" : "collecte_actif"
   }
+  
 ]
