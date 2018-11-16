@@ -7,14 +7,18 @@
 <script>
 // TODO: Create your API Key:
 // https://cloud.google.com/maps-platform/ -> GET STARTET -> Follow the instructions
+import mapStyle from '~/static/mapStyle.json'
+
 export default {
   data() {
     return {
       map: null,
+      mapStyle: mapStyle,
     };
   },
   mounted() {
     this.loadMap();
+    console.log(this.mapStyle);
   },
   beforeDestroy() {
     this.map = null;
@@ -31,6 +35,7 @@ export default {
           lng: 1.43,
         },
         zoom: 12,
+        styles: this.mapStyle,
         disableDefaultUI: true,
       });
 
