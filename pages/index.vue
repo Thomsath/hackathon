@@ -1,14 +1,7 @@
 <template>
   <section class="container">
     <splash-screen ref="splashScreen" v-if="splashScreenVisible"/>
-    <div class="navbar" v-if="navVisible">
-      <a href="new-waste" class="nav__link nav__link--left"><img class="nav__logo" src="~assets/img/location.svg"></a>
-
-      <label class="nav__link nav__link--label">
-        <input type="file" name="pic" class="nav__link nav__link--middle" accept="image/location.svg*">
-      </label>
-      <a href="list-waste" class="nav__link nav__link--right"><img class="nav__logo" src="~assets/img/list.svg"></a>
-    </div>
+    <custom-navbar />
     <app-map class="map"/>
   </section>
 </template>
@@ -16,13 +9,15 @@
 <script>
   import Logo from '~/components/Logo.vue'
   import SplashScreen from '~/components/SplashScreen.vue'
+  import CustomNavbar from '~/components/ShowNavbar.vue' 
   import AppMap from '~/components/AppMap.vue'
 
   export default {
     components: {
       Logo,
       SplashScreen,
-      AppMap
+      AppMap,
+      CustomNavbar
     },
     data () {
       return {

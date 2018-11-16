@@ -25,7 +25,7 @@
 	width: 100%;
 	/* background-color: red; */
 	justify-content: space-around;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	padding: 15px 0 15px 0;
 	height: 110px;
@@ -213,4 +213,26 @@ input:checked + .slider:before {
     left: 67px;
     bottom: 32px;
     position: relative;
+}
+
+/* LISTING WASTE */
+
+.listWaste__list--item {
+	display: flex;
+	margin: 5px;
+}
+
+.listWaste__list--itemLeft img {
+	height: 100px;
+	width: 100px;
+}
+.listWaste__list--itemRight {
+    padding-left: 15px;
+}
+
+.listWaste__list--itemAction {
+	border-radius: 10px;
+	border: 1px solid grey;
+	padding: 5px 20px 5px 20px;
+	margin-top: 15px;
 }
