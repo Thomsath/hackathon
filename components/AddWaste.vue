@@ -20,7 +20,7 @@
 				<span class="form__addWaste--spanNReusable">Mauvais</span>
 			</label>
 			
-			<input type="submit" class="form__addWaste--submit" value="Publier l'annonce">
+			<a href="add-success" class="form__addWaste--submit">Publier l'annonce</a>
 		</form>
 	</div>
 

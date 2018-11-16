@@ -125,6 +125,7 @@ label.nav__link.nav__link--label {
 	width: 60%;
 }
 .form__addWaste--submit {
+	text-decoration: none;
 	border-radius: 5px;
 	background-color: #ff9b85;
 	border: 1px solid #ff9b85;
@@ -361,6 +362,7 @@ input:checked + .slider:before {
   width: 120px;
 }
 .success__container--submit {
+	text-decoration: none;
   background-color: #ff9b85;
   border: none;
   padding: 10px 60px 10px 60px;

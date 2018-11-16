@@ -8,7 +8,7 @@
 
 		<p>Nous avons bien reçu votre annonce. Après vérification elle sera publiée et visible par tous.</p>
 
-		<input type="submit" @input="returnHome" class="success__container--submit" value="Retour à l'accueil" />
+		<a href="/" class="success__container--submit">Retour à l'accueil</a>
 
 		<i>*: Bousier</i>
 	</div>
@@ -20,7 +20,7 @@ export default {
   methods: {
     returnHome() {
     	console.log('opfs');
-      this.$router.push('/');
+      // this.$router.push('/');
     }
   }
 }
