@@ -24,7 +24,7 @@
     data () {
       return {
         online: true,
-        splashScreenVisible : false,
+        splashScreenVisible : true,
         navVisible: true,
         map: null,
         mapStyle: mapStyle,
@@ -62,6 +62,11 @@
       async loadMap() {
         const vm = this;
         await this.loadGoogleMapsScript();
+
+        setTimeout( function(){
+          vm.splashScreenVisible = false;
+        }, 2000)
+        
         this.map = new google.maps.Map(this.$refs.map, {
           center: {
             lat: parseFloat(vm.pos.lat),
