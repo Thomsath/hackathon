@@ -1,0 +1,31 @@
+<template>
+  <main>
+    <success />
+
+    <custom-navbar />
+  </main>
+</template>
+
+
+<script>
+  import Success from '~/components/Success.vue'
+  import CustomNavbar from '~/components/ShowNavbar.vue'
+
+  export default {
+    components: {Success, CustomNavbar},
+    mounted () {
+      if (!window.navigator) {
+        this.online = false
+        return
+      }
+      this.online = Boolean(window.navigator.onLine)
+      window.addEventListener('offline', this._toggleNetworkStatus)
+      window.addEventListener('online', this._toggleNetworkStatus)
+    },
+    methods: {
+    }
+  }
+</script>
+<style>
+
+</style>
