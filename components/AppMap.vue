@@ -48,18 +48,20 @@ export default {
       });
 
       let infowindow = new google.maps.InfoWindow({
-        content: '<div>hello</div>'
+        content: '<div class="marker-container">hello</div>'
       });
 
-      for (var i = 0; i<mapMarker.length; i++) {
+      for (var i = 0; i<vm.mapMarker.length; i++) {
         let marker = new google.maps.Marker({
           position: {lat: parseFloat(mapMarker[i].lat), lng: parseFloat(mapMarker[i].lng)},
           map: this.map,
+          icon: vm.mapMarker[i].type+'.png'
         });
 
         marker.addListener('click', function() {
           infowindow.open(map, marker);
-        });
+          console.log('heelo');
+        })
       }
     },
     loadGoogleMapsScript() {
