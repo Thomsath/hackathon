@@ -125,11 +125,12 @@ label.nav__link.nav__link--label {
 	width: 60%;
 }
 .form__addWaste--submit {
-	border-radius: 5px;
+	border-radius: 15px;
 	background-color: #ff9b85;
 	border: 1px solid #ff9b85;
-	padding: 5px 40px 5px 40px;
+	padding: 10px 60px 10px 60px;
 	color: white;
+  font-size: 1em;
 }
 input.form__addWaste--address {
 	margin-bottom: 15px;
@@ -186,10 +187,10 @@ input.form__addWaste--address {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #4cd137;
 }
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #4cd137;
 }
 
 input:checked + .slider:before {
@@ -295,7 +296,7 @@ input:checked + .slider:before {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #4cd137;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
