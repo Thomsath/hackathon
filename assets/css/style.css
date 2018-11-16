@@ -1,7 +1,15 @@
+.container {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
 .splashScreen {
+	position: absolute;
+	top: 0;
+	left: 0;
 	height: 100vh;
 	background-color: #173C34;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,6 +29,7 @@
 	bottom: 0;
 	padding: 15px 0 15px 0;
 	height: 110px;
+	z-index: 2;
 }
 
 .nav__link--label {
@@ -76,4 +85,8 @@
 
 .fileContainer [type=file] {
     cursor: pointer;
+}
+
+.map {
+	z-index: 1;
 }
