@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <splash-screen v-if="splashScreenVisible"/>
+    <splash-screen ref="splashScreen" v-if="splashScreenVisible"/>
     <div class="navbar" v-if="navVisible">
       <a href="new-waste" class="nav__link nav__link--left"><img class="nav__logo" src="~assets/img/location.svg"></a>
 
@@ -46,8 +46,6 @@
       setTimeout(
         function() {
           this.splashScreenVisible = false;
-
-          
 
           // const contain = document.getElementsByClassName('container');
           // const splashScreen = document.getElementsByClassName('splashScreen');
