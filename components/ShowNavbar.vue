@@ -7,7 +7,7 @@
 
         <label class="nav__link nav__link--label">
           <a href="add-waste">
-              <img src="~assets/img/logo_rose_plein.svg">
+              <img src="~assets/img/camera.svg">
               <input @input="sendPicture" type="file" name="pic" class="nav__link nav__link--middle" accept="image/location.svg*">
           </a>
         </label>

@@ -12,6 +12,7 @@
 	background-color: #173C34;
 	width: 100vw;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	z-index: 9999;
