@@ -11,8 +11,6 @@
 
   export default {
     components: {CustomNavbar, ListWaste},
-    data () {
-    },
     mounted () {
       if (!window.navigator) {
         this.online = false
