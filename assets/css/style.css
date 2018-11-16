@@ -27,7 +27,6 @@
 	justify-content: space-around;
 	position: fixed;
 	bottom: 0;
-	padding: 15px 0 15px 0;
 	height: 110px;
 	z-index: 2;
 }
@@ -45,8 +44,8 @@ label.nav__link.nav__link--label {
 }
 
 .nav__link:not(:nth-child(2)) {
-	height: 80px;
-	width: 80px;
+	height: 90px;
+	width: 90px;
 }
 
 .nav__link:nth-child(2) {
@@ -232,7 +231,9 @@ input:checked + .slider:before {
 
 .listWaste__list--itemAction {
 	border-radius: 10px;
-	border: 1px solid grey;
-	padding: 5px 20px 5px 20px;
-	margin-top: 15px;
+    border: 1px solid #ff9b85;
+    padding: 5px 20px 5px 20px;
+    background-color: #ff9b85;
+    margin-top: 15px;
+    color: white;
 }
